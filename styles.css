@@ -1,0 +1,119 @@
+:root {
+    --dark: #32327c;
+    --light: #628cff;
+    --free-text: #000;
+    --head-text: #111212;
+    --caption: #111212;
+    --highlight: #e01073;
+    --border: #250337;
+    --tablet-bp: 768px;
+    --desktop-bp: 1024;
+}
+main {
+    padding-left: 10px;
+}
+h1 {
+    font: 70px arial;
+    color: var(--head-text);
+}
+h2 {
+    font: 30px arial;
+    font-weight: bold;
+    color:#111212;
+}
+p {
+    font: 20px arial;
+    color: #111212;
+}
+nav a {
+    font: 20px arial;
+    color: var(--light);
+    text-decoration: none;
+    text-align: left;
+}
+nav a:hover {
+    color: var(--highlight);
+}
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+header {
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.grid > * {
+    padding: 10px 0;
+    font-size: 30px;
+}
+.subgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.home {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.history {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.gallery {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.purchase {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.corner {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: var(--dark);
+}
+.top {
+    grid-column-start: 2;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: var(--dark);
+}
+.mainspace {
+    grid-column-start: 2;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 12;
+    background-color: #ffffff;
+    padding-left: 10px;
+}
+.bottom {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 12;
+    grid-row-end: 13;
+    background-image: url(images/new\ color\ border.png);
+}
+.side {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 12;
+}
+@media screen {
+    
+}
