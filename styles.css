@@ -106,7 +106,7 @@ header {
     grid-column-end: 13;
     grid-row-start: 12;
     grid-row-end: 13;
-    background-image: url(images/new\ color\ border.png);
+    background-image: url(new\ color\ border.png);
 }
 .side {
     grid-column-start: 1;
