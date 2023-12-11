@@ -98,7 +98,7 @@ header {
     grid-column-end: 13;
     grid-row-start: 2;
     grid-row-end: 12;
-    background-color: #ffffff;
+    background-color: beige;
     padding-left: 10px;
 }
 .bottom {
@@ -106,14 +106,45 @@ header {
     grid-column-end: 13;
     grid-row-start: 12;
     grid-row-end: 13;
-    background-image: url(new\ color\ border.png);
+    background-image: url(images/new\ color\ border.png);
 }
 .side {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 12;
+    background-color: beige;
 }
-@media screen {
+@media screen and (min-width: 360px) {
     
+}
+legend {
+    font-size: 26px;
+    font-family: Arial;
+    font-weight: bold;
+}
+label {
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+}
+.required::after {
+    content: " *";
+    color: red;
+}
+.optional::after {
+    content: " (optional)";
+    color: #4E4E4E;
+    font-size: small;
+    font-style: italic;
+}
+.notes {
+    font-weight: bold;
+}
+.links {
+    color: blue;
+    text-decoration: underline;
+}
+fieldset {
+    background-color: beige;
 }
