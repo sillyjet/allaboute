@@ -3,25 +3,26 @@
     <head>
         <link rel="stylesheet"
         href="styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>User Image Gallery</title>
         <meta charset="UTF-8">
-        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="icon" type="image/png" href="images/favicon.ico">
     </head>
-    <div class="grid">
-        <header class="corner">
-            <img src="e_logo.png" alt="A logo made up of a sophisticated-looking light blue capital E sitting inside a white circle with a border that is the same shade of light blue as the E itself">
-        </header>
-        <nav class="top">
-            <div class ="subgrid">
+    <body>
+        <header>
+            <img src="images/e_logo.png" alt="A logo made up of a sophisticated-looking light blue capital E sitting inside a white circle with a border that is the same shade of light blue as the E itself">
+            <nav class="grid top">
                 <a class="home" href="index.html">Home</a>
                 <a class="history" href="history.html">History of E</a>
                 <a class="gallery" href="gallery.html">Image Gallery</a>
+                <a class="fonts" href="fonts.html">E in Different Fonts</a>
                 <a class="purchase" target="_blank" href="https://www.customizedgirl.com/s/e-pparel">Purchase E-pparel</a>
-            </div>
-        </nav>
-        <aside class = "side">
-            <form action="submissions.php" autocomplete="off">
+            </nav> 
+        </header>
+        <h1>User Image Gallery</h1>
+        <h2>Here is a collection of Es submitted by users all over the world!</h2>
+        <main class="simplegrid">
+            <form class="side" action="submissions.php" autocomplete="off">
                 <fieldset>
                     <legend>SUBMIT AN E</legend>
                     <label for="username" class="required">Name:</label><br>
@@ -29,18 +30,22 @@
                     <label for="picture" class="required">Choose an image:</label><br>
                     <input type="text" id="picture" placeholder="Currently disabled" required><br>
                     <label for="comment" class="optional">Description:</label><br>
-                    <input type="textarea" id="comment" placeholder="Describe your picture"><br>
+                    <input type="text" id="comment" placeholder="Describe your picture"><br>
                     <input class="button" type="submit" value="Submit">
                     <input class="button" type="reset" value="Clear">
                 </fieldset>
             </form>
-        </aside>
-        <main class="mainspace">
-            <h1>User Image Gallery</h1>
-            <h2>Here is a collection of Es submitted by users all over the world!</h2>
+            <div class="flex5">
+                <img class = flex2 src="images/Rainbow-diagonal-striped-e-cropped.png" alt="" width="200">
+                <img class = flex2 src="images/Warm-colors-fuzzy-carpet-e-cropped.png" alt="" width="200">
+                <img class = flex2 src="images/Warm-purple-paint-splatter-e-cropped.png" alt="" width="200">
+                <img class = flex2 src="images/Pumpkin-e-cropped.png" alt="" width="200">
+                <img class = flex2 src="images/Green-witch-e-cropped.png" alt="" width="200">
+                <img class = flex2 src="images/Red-book-e-cropped.png" alt="" width="200">
+            </div>
         </main>
         <footer class="bottom">
-            FOOTER
+            Contact: email@email.com
         </footer>
-    </div>
+    </body>
 </html>
